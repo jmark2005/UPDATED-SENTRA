@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard — SENTRA</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="dash-page">
+  <div class="dash-layout">
+
+    <aside class="dash-sidebar" id="dashSidebar">
+      <div class="dash-brand">
+        <img src="Global Solutions INC..jpg" alt="Global Solutions INC." />
+        <div class="dash-brand-text">
+          <span class="dash-brand-name">Global Solutions INC.</span>
+          <span class="dash-brand-tag">SENTRA</span>
+        </div>
+      </div>
+      <nav class="dash-nav" id="dashNav">
+        <div class="dash-nav-section">Main</div>
+        <a class="dash-nav-item active" data-section="overview"><i class="fas fa-gauge-high"></i> Overview</a>
+        <div class="dash-nav-section">Management</div>
+        <a class="dash-nav-item" data-section="students"><i class="fas fa-id-card"></i> Student Information</a>
+        <a class="dash-nav-item" data-section="incidents"><i class="fas fa-file-circle-exclamation"></i> Incident Reporting</a>
+        <a class="dash-nav-item" data-section="attendance"><i class="fas fa-calendar-check"></i> Attendance Monitoring</a>
+        <a class="dash-nav-item" data-section="support"><i class="fas fa-hand-holding-heart"></i> Support Services</a>
+        <div class="dash-nav-section">Campus Tools</div>
+        <a class="dash-nav-item" data-section="emergency"><i class="fas fa-bell"></i> Emergency Alerts</a>
+        <a class="dash-nav-item" data-section="facility"><i class="fas fa-map-location-dot"></i> Facility Mapping</a>
+        <a class="dash-nav-item" data-section="users"><i class="fas fa-users"></i> User Accounts</a>
+      </nav>
+      <div class="dash-sidebar-footer">
+        <a href="login.html" class="dash-logout" id="logoutBtn"><i class="fas fa-right-from-bracket"></i> Logout</a>
+      </div>
+    </aside>
+    <div class="dash-backdrop" id="dashBackdrop"></div>
+
+    <div class="dash-main">
+      <header class="dash-topbar">
+        <button class="dash-menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+        <div class="dash-page-title" id="pageTitle">Overview <small>Administrator Dashboard</small></div>
+        <div class="dash-user">
+          <div class="dash-user-info">
+            <span class="dash-user-name">Administrator</span>
+            <span class="dash-user-role">School Administrator</span>
+          </div>
+          <div class="dash-avatar">AD</div>
+        </div>
+      </header>
+
+      <main class="dash-content">
+
+        <!-- OVERVIEW -->
+        <section class="section-panel active" id="overview">
+          <div class="dash-welcome">
+            <h2>Administrator Dashboard</h2>
+            <p>Monitor and manage student safety, attendance, and support services across the campus.</p>
+          </div>
+          <div class="stat-grid">
+            <div class="stat-card">
+              <div class="stat-card-ico maroon"><i class="fas fa-user-graduate"></i></div>
+              <div class="stat-card-body"><small>Total Students</small><strong id="statStudents">0</strong></div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card-ico red"><i class="fas fa-triangle-exclamation"></i></div>
+              <div class="stat-card-body"><small>Open Incidents</small><strong>3</strong></div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card-ico green"><i class="fas fa-calendar-check"></i></div>
+              <div class="stat-card-body"><small>Attendance Rate</small><strong>96%</strong></div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card-ico orange"><i class="fas fa-hand-holding-heart"></i></div>
+              <div class="stat-card-body"><small>Pending Support</small><strong>4</strong></div>
+            </div>
+          </div>
+
+          <div class="panel-card">
+            <div class="panel-card-header">
+              <div class="panel-card-title"><i class="fas fa-id-card"></i> Student Information Management</div>
+              <button class="btn-maroon btn-sm" onclick="showSection('students')"><i class="fas fa-arrow-right"></i> Manage Students</button>
+            </div>
+            <p class="dash-muted-intro" style="margin-bottom:0;">Records and manages essential student information needed for safety monitoring, attendance tracking, and student support services.</p>
+          </div>
+        </section>
+
+        <!-- STUDENT INFORMATION MANAGEMENT -->
+        <section class="section-panel" id="students">
+          <div class="panel-card">
+            <div class="panel-card-header">
+              <div class="panel-card-title"><i class="fas fa-id-card"></i> Student Information Management</div>
+              <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+                <input id="studentSearch" class="search-input" placeholder="Search name or ID..." oninput="renderTable()" />
+                <button class="btn-maroon btn-sm" onclick="openStudentModal('add')"><i class="fas fa-user-plus"></i> Add Student</button>
+              </div>
+            </div>
+            <p class="dash-muted-intro">Records and manages essential student information needed for safety monitoring, attendance tracking, and student support services.</p>
+            <div class="data-table-wrap">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Student</th><th>Student ID</th><th>Year / Section</th><th>Department</th><th>Status</th><th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="studentTableBody"></tbody>
+              </table>
+            </div>
+            <div style="margin-top:14px;font-size:.82rem;color:var(--muted);" id="studentCount"></div>
+          </div>
+        </section>
+
+        <!-- INCIDENT REPORTING -->
+        <section class="section-panel" id="incidents">
+          <div class="placeholder-panel">
+            <div class="ph-icon"><i class="fas fa-file-circle-exclamation"></i></div>
+            <h3>Safety Incident Reporting &amp; Monitoring</h3>
+            <p>Allows designated school personnel to record, update, and monitor student safety incidents — including incident details, date, people involved, actions taken, and current status.</p>
+            <span class="ph-soon">Coming Soon</span>
+          </div>
+        </section>
+
+        <!-- ATTENDANCE MONITORING -->
+        <section class="section-panel" id="attendance">
+          <div class="placeholder-panel">
+            <div class="ph-icon"><i class="fas fa-calendar-check"></i></div>
+            <h3>Semester Attendance Monitoring</h3>
+            <p>Records present, absent, and tardy statuses throughout the semester and generates attendance summaries for school personnel.</p>
+            <span class="ph-soon">Coming Soon</span>
+          </div>
+        </section>
+
+        <!-- SUPPORT SERVICES -->
+        <section class="section-panel" id="support">
+          <div class="placeholder-panel">
+            <div class="ph-icon"><i class="fas fa-hand-holding-heart"></i></div>
+            <h3>Student Support Services Management</h3>
+            <p>Records student support activities including academic assistance, guidance referrals, and other school-based services within the project scope.</p>
+            <span class="ph-soon">Coming Soon</span>
+          </div>
+        </section>
+
+        <!-- EMERGENCY ALERTS -->
+        <section class="section-panel" id="emergency">
+          <div class="placeholder-panel">
+            <div class="ph-icon"><i class="fas fa-bell"></i></div>
+            <h3>Emergency Alerts</h3>
+            <p>Monitor and respond to emergency notifications triggered by students and staff across the school premises.</p>
+            <span class="ph-soon">Coming Soon</span>
+          </div>
+        </section>
+
+        <!-- FACILITY MAPPING -->
+        <section class="section-panel" id="facility">
+          <div class="panel-card">
+            <div class="panel-card-header">
+              <div class="panel-card-title"><i class="fas fa-map-location-dot"></i> Facility Mapping</div>
+            </div>
+            <p style="color:var(--muted);margin-bottom:16px;font-size:.9rem;line-height:1.65;">A virtual diagram of the school premises integrated into the system to indicate the location of reported incidents or emergencies.</p>
+            <img src="blueprint.svg" alt="School Facility Map" style="width:100%;border:1px solid var(--border);border-radius:12px;background:#fff;" />
+          </div>
+        </section>
+
+        <!-- USER ACCOUNTS -->
+        <section class="section-panel" id="users">
+          <div class="placeholder-panel">
+            <div class="ph-icon"><i class="fas fa-users"></i></div>
+            <h3>User Account Management</h3>
+            <p>Review and manage accounts for administrators, teachers, counselors, staff, and students — including approvals for newly registered users.</p>
+            <span class="ph-soon">Coming Soon</span>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- Student modal (add / edit / view) -->
+  <div class="modal-overlay" id="studentModal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 id="studentModalTitle"><i class="fas fa-id-card"></i> Student Record</h3>
+        <button class="modal-close" data-close-student><i class="fas fa-xmark"></i></button>
+      </div>
+      <div class="modal-body" id="studentModalBody"></div>
+      <div class="modal-footer" id="studentModalFooter"></div>
+    </div>
+  </div>
+
+  <script>
+    // --- Auth guard ---
+    (function () {
+      const user = sessionStorage.getItem('sentra_user');
+      if (!user) { window.location.href = 'login.html'; return; }
+      const u = JSON.parse(user);
+      if (u.role !== 'admin') {
+        window.location.href = u.role === 'student' ? 'student-dashboard.html' : 'login.html';
+      }
+    })();
+
+    // --- Sample student records (in-memory) ---
+    let students = [
+      { id: 's1', fullName: 'Juan dela Cruz', studentId: '2024-00123', dob: 'March 12, 2006', gender: 'Male', email: 'juan.delacruz@sentra.edu.ph', phone: '0917-123-4567', guardian: 'Mrs. Maria dela Cruz (Mother)', guardianPhone: '0917-765-4321', program: 'Senior High — STEM', yearLevel: 'Grade 11', section: 'Rizal', department: 'Science Department', adviser: 'Mr. Antonio Reyes', status: 'Enrolled', bloodType: 'O+', allergies: 'None', medical: 'Asthma (mild)', ecName: 'Mrs. Maria dela Cruz', ecRel: 'Mother', ecPhone: '0917-765-4321' },
+      { id: 's2', fullName: 'Maria Santos', studentId: '2024-00124', dob: 'July 22, 2006', gender: 'Female', email: 'maria.santos@sentra.edu.ph', phone: '0918-234-5678', guardian: 'Mr. Pedro Santos (Father)', guardianPhone: '0918-876-5432', program: 'Senior High — ABM', yearLevel: 'Grade 11', section: 'Bonifacio', department: 'Mathematics Department', adviser: 'Ms. Liza Cruz', status: 'Enrolled', bloodType: 'A+', allergies: 'Peanuts', medical: 'None', ecName: 'Mr. Pedro Santos', ecRel: 'Father', ecPhone: '0918-876-5432' },
+      { id: 's3', fullName: 'Pedro Reyes', studentId: '2024-00125', dob: 'January 5, 2005', gender: 'Male', email: 'pedro.reyes@sentra.edu.ph', phone: '0919-345-6789', guardian: 'Mrs. Rosa Reyes (Mother)', guardianPhone: '0919-987-6543', program: 'Senior High — HUMSS', yearLevel: 'Grade 12', section: 'Aguinaldo', department: 'English Department', adviser: 'Mr. Jose Garcia', status: 'On Leave', bloodType: 'B+', allergies: 'None', medical: 'None', ecName: 'Mrs. Rosa Reyes', ecRel: 'Mother', ecPhone: '0919-987-6543' },
+      { id: 's4', fullName: 'Ana Lim', studentId: '2024-00126', dob: 'November 14, 2007', gender: 'Female', email: 'ana.lim@sentra.edu.ph', phone: '0920-456-7890', guardian: 'Mrs. Linda Lim (Mother)', guardianPhone: '0920-111-2222', program: 'Junior High', yearLevel: 'Grade 10', section: 'Mabini', department: 'Science Department', adviser: 'Ms. Ana Torres', status: 'Enrolled', bloodType: 'O-', allergies: 'Seafood', medical: 'None', ecName: 'Mrs. Linda Lim', ecRel: 'Mother', ecPhone: '0920-111-2222' },
+      { id: 's5', fullName: 'Jose Garcia', studentId: '2024-00127', dob: 'May 30, 2005', gender: 'Male', email: 'jose.garcia@sentra.edu.ph', phone: '0921-567-8901', guardian: 'Mr. Ramon Garcia (Father)', guardianPhone: '0921-222-3333', program: 'Senior High — ICT', yearLevel: 'Grade 12', section: 'Luna', department: 'ICT Department', adviser: 'Mr. Carlo Mendoza', status: 'Enrolled', bloodType: 'AB+', allergies: 'None', medical: 'Color blindness', ecName: 'Mr. Ramon Garcia', ecRel: 'Father', ecPhone: '0921-222-3333' },
+      { id: 's6', fullName: 'Liza Cruz', studentId: '2024-00128', dob: 'September 9, 2006', gender: 'Female', email: 'liza.cruz@sentra.edu.ph', phone: '0922-678-9012', guardian: 'Mrs. Nora Cruz (Mother)', guardianPhone: '0922-333-4444', program: 'Senior High — GAS', yearLevel: 'Grade 11', section: 'Rizal', department: 'Social Studies Department', adviser: 'Mr. Antonio Reyes', status: 'Inactive', bloodType: 'A-', allergies: 'Dust', medical: 'None', ecName: 'Mrs. Nora Cruz', ecRel: 'Mother', ecPhone: '0922-333-4444' }
+    ];
+
+    function initials(name) {
+      return name.split(' ').map(function (p) { return p[0]; }).slice(0, 2).join('').toUpperCase();
+    }
+    function statusClass(s) {
+      return s === 'Enrolled' ? 'status-enrolled' : s === 'On Leave' ? 'status-onleave' : 'status-inactive';
+    }
+
+    function renderTable() {
+      const q = (document.getElementById('studentSearch').value || '').toLowerCase();
+      const list = students.filter(function (s) {
+        return s.fullName.toLowerCase().indexOf(q) > -1 || s.studentId.toLowerCase().indexOf(q) > -1;
+      });
+      const body = document.getElementById('studentTableBody');
+      if (!list.length) {
+        body.innerHTML = '<tr><td colspan="6" style="text-align:center;padding:32px;color:var(--muted);">No students found.</td></tr>';
+      } else {
+        body.innerHTML = list.map(function (s) {
+          return '<tr>' +
+            '<td><div class="student-name"><div class="student-avatar">' + initials(s.fullName) + '</div><div class="student-meta">' + s.fullName + '<small>' + s.program + '</small></div></div></td>' +
+            '<td>' + s.studentId + '</td>' +
+            '<td>' + s.yearLevel + ' - ' + s.section + '</td>' +
+            '<td>' + s.department + '</td>' +
+            '<td><span class="status-pill ' + statusClass(s.status) + '">' + s.status + '</span></td>' +
+            '<td><div class="row-actions">' +
+              '<button title="View" onclick="viewStudent(\'' + s.id + '\')"><i class="fas fa-eye"></i></button>' +
+              '<button title="Edit" onclick="openStudentModal(\'edit\',\'' + s.id + '\')"><i class="fas fa-pen"></i></button>' +
+              '<button title="Delete" class="danger" onclick="deleteStudent(\'' + s.id + '\')"><i class="fas fa-trash"></i></button>' +
+            '</div></td>' +
+          '</tr>';
+        }).join('');
+      }
+      document.getElementById('studentCount').textContent = 'Showing ' + list.length + ' of ' + students.length + ' student(s).';
+      document.getElementById('statStudents').textContent = students.length;
+    }
+
+    // --- Modal: add / edit ---
+    function openStudentModal(mode, id) {
+      const s = mode === 'edit' ? Object.assign({}, students.find(function (x) { return x.id === id; })) : { status: 'Enrolled', gender: 'Male' };
+      document.getElementById('studentModalTitle').innerHTML = mode === 'edit'
+        ? '<i class="fas fa-pen"></i> Edit Student'
+        : '<i class="fas fa-user-plus"></i> Add Student';
+      document.getElementById('studentModalBody').innerHTML = studentForm(s);
+      document.getElementById('studentModalFooter').innerHTML =
+        '<button class="btn-soft btn-sm" data-close-student>Cancel</button>' +
+        '<button class="btn-maroon btn-sm" onclick="saveStudent(\'' + mode + '\', \'' + (id || '') + '\')"><i class="fas fa-check"></i> ' + (mode === 'edit' ? 'Save Changes' : 'Add Student') + '</button>';
+      document.getElementById('studentModal').classList.add('open');
+    }
+
+    function studentForm(s) {
+      const opt = function (val, label) { return '<option ' + (s.status === val ? 'selected' : '') + '>' + val + '</option>'; };
+      return '' +
+        '<div class="info-section-title" style="margin-top:0;"><i class="fas fa-user"></i> Personal Information</div>' +
+        '<div class="field-row">' +
+          '<div class="field"><label>Full Name *</label><input id="f_fullName" value="' + (s.fullName || '') + '"></div>' +
+          '<div class="field"><label>Student ID *</label><input id="f_studentId" value="' + (s.studentId || '') + '"></div>' +
+        '</div>' +
+        '<div class="field-row">' +
+          '<div class="field"><label>Date of Birth</label><input id="f_dob" value="' + (s.dob || '') + '"></div>' +
+          '<div class="field"><label>Gender</label><select id="f_gender"><option ' + (s.gender === 'Male' ? 'selected' : '') + '>Male</option><option ' + (s.gender === 'Female' ? 'selected' : '') + '>Female</option></select></div>' +
+        '</div>' +
+        '<div class="info-section-title"><i class="fas fa-address-book"></i> Contact &amp; Guardian</div>' +
+        '<div class="field-row">' +
+          '<div class="field"><label>Email</label><input id="f_email" value="' + (s.email || '') + '"></div>' +
+          '<div class="field"><label>Phone</label><input id="f_phone" value="' + (s.phone || '') + '"></div>' +
+        '</div>' +
+        '<div class="field-row">' +
+          '<div class="field"><label>Guardian Name</label><input id="f_guardian" value="' + (s.guardian || '') + '"></div>' +
+          '<div class="field"><label>Guardian Phone</label><input id="f_guardianPhone" value="' + (s.guardianPhone || '') + '"></div>' +
+        '</div>' +
+        '<div class="info-section-title"><i class="fas fa-graduation-cap"></i> Academic Information</div>' +
+        '<div class="field-row">' +
+          '<div class="field"><label>Program / Course</label><input id="f_program" value="' + (s.program || '') + '"></div>' +
+          '<div class="field"><label>Year Level</label><input id="f_yearLevel" value="' + (s.yearLevel || '') + '"></div>' +
+        '</div>' +
+        '<div class="field-row">' +
+          '<div class="field"><label>Section</label><input id="f_section" value="' + (s.section || '') + '"></div>' +
+          '<div class="field"><label>Department</label><input id="f_department" value="' + (s.department || '') + '"></div>' +
+        '</div>' +
+        '<div class="field-row">' +
+          '<div class="field"><label>Adviser</label><input id="f_adviser" value="' + (s.adviser || '') + '"></div>' +
+          '<div class="field"><label>Enrollment Status</label><select id="f_status">' + opt('Enrolled') + opt('On Leave') + opt('Inactive') + '</select></div>' +
+        '</div>' +
+        '<div class="info-section-title"><i class="fas fa-shield-heart"></i> Safety &amp; Medical</div>' +
+        '<div class="field-row">' +
+          '<div class="field"><label>Blood Type</label><input id="f_bloodType" value="' + (s.bloodType || '') + '"></div>' +
+          '<div class="field"><label>Allergies</label><input id="f_allergies" value="' + (s.allergies || '') + '"></div>' +
+        '</div>' +
+        '<div class="field"><label>Medical Conditions</label><input id="f_medical" value="' + (s.medical || '') + '"></div>' +
+        '<div class="field-row">' +
+          '<div class="field"><label>Emergency Contact Name</label><input id="f_ecName" value="' + (s.ecName || '') + '"></div>' +
+          '<div class="field"><label>Relationship</label><input id="f_ecRel" value="' + (s.ecRel || '') + '"></div>' +
+        '</div>' +
+        '<div class="field"><label>Emergency Contact Phone</label><input id="f_ecPhone" value="' + (s.ecPhone || '') + '"></div>';
+    }
+
+    function fieldVal(id) { const el = document.getElementById(id); return el ? el.value.trim() : ''; }
+
+    function saveStudent(mode, id) {
+      const data = {
+        fullName: fieldVal('f_fullName'), studentId: fieldVal('f_studentId'),
+        dob: fieldVal('f_dob'), gender: fieldVal('f_gender'),
+        email: fieldVal('f_email'), phone: fieldVal('f_phone'),
+        guardian: fieldVal('f_guardian'), guardianPhone: fieldVal('f_guardianPhone'),
+        program: fieldVal('f_program'), yearLevel: fieldVal('f_yearLevel'),
+        section: fieldVal('f_section'), department: fieldVal('f_department'),
+        adviser: fieldVal('f_adviser'), status: fieldVal('f_status'),
+        bloodType: fieldVal('f_bloodType'), allergies: fieldVal('f_allergies'),
+        medical: fieldVal('f_medical'), ecName: fieldVal('f_ecName'),
+        ecRel: fieldVal('f_ecRel'), ecPhone: fieldVal('f_ecPhone')
+      };
+      if (!data.fullName || !data.studentId) { alert('Full Name and Student ID are required.'); return; }
+      if (mode === 'add') {
+        data.id = 's' + Date.now();
+        students.unshift(data);
+      } else {
+        const idx = students.findIndex(function (x) { return x.id === id; });
+        if (idx > -1) students[idx] = Object.assign({}, students[idx], data);
+      }
+      closeStudentModal();
+      renderTable();
+    }
+
+    // --- Modal: view ---
+    function viewStudent(id) {
+      const s = students.find(function (x) { return x.id === id; });
+      document.getElementById('studentModalTitle').innerHTML = '<i class="fas fa-id-card"></i> Student Record — ' + s.fullName;
+      document.getElementById('studentModalBody').innerHTML = viewInfo(s);
+      document.getElementById('studentModalFooter').innerHTML =
+        '<button class="btn-soft btn-sm" data-close-student>Close</button>' +
+        '<button class="btn-maroon btn-sm" onclick="openStudentModal(\'edit\',\'' + s.id + '\')"><i class="fas fa-pen"></i> Edit</button>';
+      document.getElementById('studentModal').classList.add('open');
+    }
+
+    function viewInfo(s) {
+      const item = function (l, v) { return '<div class="info-item"><label>' + l + '</label><span>' + (v || '—') + '</span></div>'; };
+      return '' +
+        '<div class="info-section-title" style="margin-top:0;"><i class="fas fa-user"></i> Personal Information</div>' +
+        '<div class="info-grid">' + item('Full Name', s.fullName) + item('Student ID', s.studentId) + item('Date of Birth', s.dob) + item('Gender', s.gender) + '</div>' +
+        '<div class="info-section-title"><i class="fas fa-address-book"></i> Contact &amp; Guardian</div>' +
+        '<div class="info-grid">' + item('Email', s.email) + item('Phone', s.phone) + item('Guardian', s.guardian) + item('Guardian Phone', s.guardianPhone) + '</div>' +
+        '<div class="info-section-title"><i class="fas fa-graduation-cap"></i> Academic Information</div>' +
+        '<div class="info-grid">' + item('Program', s.program) + item('Year Level', s.yearLevel) + item('Section', s.section) + item('Department', s.department) + item('Adviser', s.adviser) + item('Status', '<span class="status-pill ' + statusClass(s.status) + '">' + s.status + '</span>') + '</div>' +
+        '<div class="info-section-title"><i class="fas fa-shield-heart"></i> Safety &amp; Medical</div>' +
+        '<div class="info-grid">' + item('Blood Type', s.bloodType) + item('Allergies', s.allergies) + item('Medical Conditions', s.medical) + item('Emergency Contact', s.ecName) + item('Relationship', s.ecRel) + item('Emergency Phone', s.ecPhone) + '</div>';
+    }
+
+    function deleteStudent(id) {
+      const s = students.find(function (x) { return x.id === id; });
+      if (confirm('Delete the record of ' + s.fullName + '? This cannot be undone.')) {
+        students = students.filter(function (x) { return x.id !== id; });
+        renderTable();
+      }
+    }
+
+    function closeStudentModal() { document.getElementById('studentModal').classList.remove('open'); }
+    document.querySelectorAll('[data-close-student]').forEach(function (b) {
+      b.addEventListener('click', closeStudentModal);
+    });
+    document.getElementById('studentModal').addEventListener('click', function (e) {
+      if (e.target.id === 'studentModal') closeStudentModal();
+    });
+
+    renderTable();
+
+    // --- Navigation ---
+    const navItems = document.querySelectorAll('.dash-nav-item');
+    const titles = {
+      overview: ['Overview', 'Administrator Dashboard'],
+      students: ['Student Information', 'Student Information Management'],
+      incidents: ['Incident Reporting', 'Safety Incident Reporting & Monitoring'],
+      attendance: ['Attendance Monitoring', 'Semester Attendance Monitoring'],
+      support: ['Support Services', 'Student Support Services Management'],
+      emergency: ['Emergency Alerts', 'Emergency Alert Monitoring'],
+      facility: ['Facility Mapping', 'School Facility Mapping'],
+      users: ['User Accounts', 'User Account Management']
+    };
+    function showSection(id) {
+      document.querySelectorAll('.section-panel').forEach(function (s) { s.classList.remove('active'); });
+      const panel = document.getElementById(id);
+      if (panel) panel.classList.add('active');
+      navItems.forEach(function (n) { n.classList.toggle('active', n.dataset.section === id); });
+      const t = titles[id] || ['Overview', 'Administrator Dashboard'];
+      document.getElementById('pageTitle').innerHTML = t[0] + ' <small>' + t[1] + '</small>';
+      closeSidebar();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    navItems.forEach(function (n) {
+      n.addEventListener('click', function (e) { e.preventDefault(); showSection(n.dataset.section); });
+    });
+
+    // --- Sidebar mobile toggle ---
+    const sidebar = document.getElementById('dashSidebar');
+    const backdrop = document.getElementById('dashBackdrop');
+    function closeSidebar() { sidebar.classList.remove('open'); backdrop.classList.remove('active'); }
+    document.getElementById('menuToggle').addEventListener('click', function () {
+      sidebar.classList.add('open'); backdrop.classList.add('active');
+    });
+    backdrop.addEventListener('click', closeSidebar);
+
+    // --- Logout ---
+    document.getElementById('logoutBtn').addEventListener('click', function (e) {
+      e.preventDefault();
+      sessionStorage.removeItem('sentra_user');
+      window.location.href = 'login.html';
+    });
+  </script>
+</body>
+</html>

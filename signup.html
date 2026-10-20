@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up — SENTRA</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="auth-page">
+
+  <div class="bg-layer">
+    <div class="particle p1"></div>
+    <div class="particle p2"></div>
+    <div class="particle p3"></div>
+    <div class="particle p4"></div>
+    <div class="particle p5"></div>
+    <div class="particle p6"></div>
+  </div>
+
+  <div class="signup-wrapper">
+
+    <div class="left-panel">
+      <a href="index.html" class="back-link">
+        <i class="fas fa-arrow-left"></i> Back to Home
+      </a>
+
+      <div class="brand">
+        <img src="Global Solutions INC..jpg" alt="Global Solutions INC." class="brand-logo" />
+        <div class="brand-text">
+          <span class="brand-name">Global Solutions INC.</span>
+          <span class="brand-tagline">SENTRA</span>
+        </div>
+      </div>
+
+      <div class="left-body">
+        <h1>Join the<br /><span>System.</span></h1>
+        <p>Create your account to access safety tools, incident reports, and student support services assigned to your role.</p>
+
+        <div class="info-list">
+          <div class="info-item">
+            <i class="fas fa-circle-check"></i>
+            <span>Role-based access for Teachers, Counselors, Staff &amp; Students</span>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-circle-check"></i>
+            <span>Secure credentials reviewed by school administrators</span>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-circle-check"></i>
+            <span>Instant access to your dashboard upon approval</span>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-circle-check"></i>
+            <span>All data protected within the school network</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="left-footer">
+        &copy; 2026 Global Solutions INC. All rights reserved.
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <div class="signup-card">
+
+        <div class="card-header">
+          <div class="signup-icon">
+            <i class="fas fa-user-plus"></i>
+          </div>
+          <h2>Create Account</h2>
+          <p>Fill in your details to register</p>
+        </div>
+
+        <div class="role-tabs">
+          <input type="radio" name="role_tab" id="tab_teacher"   class="tab-radio" checked />
+          <input type="radio" name="role_tab" id="tab_counselor" class="tab-radio" />
+          <input type="radio" name="role_tab" id="tab_staff"     class="tab-radio" />
+          <input type="radio" name="role_tab" id="tab_student"   class="tab-radio" />
+
+          <label for="tab_teacher"   class="role-tab"><i class="fas fa-chalkboard-teacher"></i> Teacher</label>
+          <label for="tab_counselor" class="role-tab"><i class="fas fa-heart-pulse"></i> Counselor</label>
+          <label for="tab_staff"     class="role-tab"><i class="fas fa-id-badge"></i> Staff</label>
+          <label for="tab_student"   class="role-tab"><i class="fas fa-user-graduate"></i> Student</label>
+        </div>
+
+        <form class="signup-form" action="#" method="post">
+
+          <div class="form-row">
+            <div class="input-group">
+              <label for="fullname">
+                <i class="fas fa-user"></i> Full Name
+              </label>
+              <div class="input-wrap">
+                <input type="text" id="fullname" name="fullname" placeholder="Juan dela Cruz" />
+              </div>
+            </div>
+            <div class="input-group">
+              <label for="idnumber">
+                <i class="fas fa-id-card"></i> ID Number
+              </label>
+              <div class="input-wrap">
+                <input type="text" id="idnumber" name="idnumber" placeholder="e.g. 2024-00001" />
+              </div>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="email">
+              <i class="fas fa-envelope"></i> Email Address
+            </label>
+            <div class="input-wrap">
+              <input type="email" id="email" name="email" placeholder="you@school.edu.ph" />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="username">
+              <i class="fas fa-at"></i> Username
+            </label>
+            <div class="input-wrap">
+              <input type="text" id="username" name="username" placeholder="Choose a username" autocomplete="username" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="input-group">
+              <label for="password">
+                <i class="fas fa-lock"></i> Password
+              </label>
+              <div class="input-wrap">
+                <input type="password" id="password" name="password" placeholder="Min. 8 characters" autocomplete="new-password" />
+              </div>
+            </div>
+            <div class="input-group">
+              <label for="confirm_password">
+                <i class="fas fa-lock"></i> Confirm Password
+              </label>
+              <div class="input-wrap">
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Re-enter password" autocomplete="new-password" />
+              </div>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="department">
+              <i class="fas fa-building"></i> Department / Section
+            </label>
+            <div class="input-wrap">
+              <select id="department" name="department">
+                <option value="" disabled selected>Select department or section</option>
+                <option>Administration Office</option>
+                <option>Guidance &amp; Counseling</option>
+                <option>Science Department</option>
+                <option>Mathematics Department</option>
+                <option>English Department</option>
+                <option>Filipino Department</option>
+                <option>Social Studies Department</option>
+                <option>Physical Education</option>
+                <option>ICT Department</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <label class="terms-label">
+            <input type="checkbox" name="agree_terms" />
+            <span class="custom-checkbox"></span>
+            I agree to the
+            <a href="#" class="terms-link">Terms &amp; Conditions</a>
+            and
+            <a href="#" class="terms-link">Privacy Policy</a>
+          </label>
+
+          <button type="submit" class="btn-signup">
+            <i class="fas fa-user-plus"></i> Create Account
+          </button>
+
+        </form>
+
+        <div class="signin-prompt">
+          Already have an account?
+          <a href="login.html" class="signin-link">Sign In</a>
+        </div>
+
+        <div class="card-footer-note">
+          <i class="fas fa-circle-info"></i>
+          New accounts require administrator approval before access is granted.
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

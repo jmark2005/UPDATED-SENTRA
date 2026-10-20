@@ -1,0 +1,395 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 920" width="1200" height="920" font-family="Segoe UI, Arial, sans-serif">
+
+  <rect width="1200" height="920" fill="#f0f4f8"/>
+
+  <!-- TOP HEADER -->
+  <rect x="0" y="0" width="1200" height="62" fill="#800000"/>
+  <rect x="14" y="10" width="42" height="42" rx="8" fill="#5c0000"/>
+  <text x="35" y="37" font-size="20" fill="white" text-anchor="middle">🛡</text>
+  <text x="68" y="26" font-size="13" font-weight="700" fill="#ffcccc">GLOBAL SOLUTIONS INC.</text>
+  <text x="68" y="46" font-size="10" fill="#ffaaaa">Smart School Safety and Student Support Management System (S⁴MS)</text>
+  <line x1="450" y1="12" x2="450" y2="50" stroke="#a06060" stroke-width="1"/>
+  <text x="464" y="26" font-size="10" fill="#ffdddd">S⁴MS — SYSTEM BLUEPRINT</text>
+  <text x="464" y="42" font-size="9" fill="#ffbbbb">Core functionalities aligned with the project scope and limitations.</text>
+  <rect x="874" y="17" width="84" height="24" rx="12" fill="rgba(255,255,255,0.15)"/>
+  <text x="916" y="33" font-size="8.5" fill="white" text-anchor="middle">👤 Students</text>
+  <rect x="965" y="17" width="74" height="24" rx="12" fill="rgba(255,255,255,0.15)"/>
+  <text x="1002" y="33" font-size="8.5" fill="white" text-anchor="middle">🏫 Staff</text>
+  <rect x="1046" y="17" width="74" height="24" rx="12" fill="rgba(255,255,255,0.15)"/>
+  <text x="1083" y="33" font-size="8.5" fill="white" text-anchor="middle">⚙ Admins</text>
+  <rect x="1127" y="17" width="62" height="24" rx="12" fill="rgba(255,255,255,0.15)"/>
+  <text x="1158" y="33" font-size="8.5" fill="white" text-anchor="middle">💬 Coun.</text>
+
+  <!-- SECTION 1: SYSTEM BLUEPRINT -->
+  <rect x="10" y="70" width="1180" height="28" rx="4" fill="#5c0000"/>
+  <text x="22" y="89" font-size="12" font-weight="700" fill="white">🗂  S⁴MS — SYSTEM BLUEPRINT  |  Core Functionalities</text>
+  <text x="680" y="89" font-size="8.5" fill="#ffcccc">Aligned with project scope: Safety Incident Reporting · Attendance · Student Support Services</text>
+
+  <!-- ── ROW 1: CF 1–3 ── -->
+
+  <!-- CF 1: Student Information Management -->
+  <rect x="10" y="106" width="376" height="138" rx="8" fill="white" stroke="#800000" stroke-width="1.5"/>
+  <rect x="10" y="106" width="376" height="30" rx="8" fill="#800000"/>
+  <rect x="10" y="122" width="376" height="14" fill="#800000"/>
+  <text x="42" y="126" font-size="10" font-weight="700" fill="white">① STUDENT INFORMATION MANAGEMENT</text>
+  <circle cx="26" cy="121" r="9" fill="rgba(255,255,255,0.2)"/>
+  <text x="26" y="125" font-size="11" fill="white" text-anchor="middle">👤</text>
+  <text x="22" y="154" font-size="8.5" fill="#333">• Records essential student information</text>
+  <text x="22" y="168" font-size="8.5" fill="#333">• Supports safety monitoring activities</text>
+  <text x="22" y="182" font-size="8.5" fill="#333">• Links student profiles to attendance</text>
+  <text x="22" y="196" font-size="8.5" fill="#333">• Connects to support service records</text>
+  <text x="22" y="210" font-size="8.5" fill="#555" font-style="italic">Scope: School personnel &amp; students only</text>
+  <rect x="22" y="220" width="120" height="16" rx="8" fill="#800000"/>
+  <text x="82" y="231" font-size="8" fill="white" text-anchor="middle">Manage Student Records</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="386" y1="175" x2="402" y2="175" stroke="#800000" stroke-width="2"/>
+  <polygon points="402,171 410,175 402,179" fill="#800000"/>
+
+  <!-- CF 2: Safety Incident Reporting and Monitoring -->
+  <rect x="410" y="106" width="376" height="138" rx="8" fill="white" stroke="#5c0000" stroke-width="1.5"/>
+  <rect x="410" y="106" width="376" height="30" rx="8" fill="#5c0000"/>
+  <rect x="410" y="122" width="376" height="14" fill="#5c0000"/>
+  <text x="442" y="126" font-size="10" font-weight="700" fill="white">② SAFETY INCIDENT REPORTING &amp; MONITORING</text>
+  <circle cx="426" cy="121" r="9" fill="rgba(255,255,255,0.2)"/>
+  <text x="426" y="125" font-size="11" fill="white" text-anchor="middle">⚠</text>
+  <text x="422" y="154" font-size="8.5" fill="#333">• Record student safety incidents</text>
+  <text x="422" y="168" font-size="8.5" fill="#333">• Capture incident details, date &amp; people involved</text>
+  <text x="422" y="182" font-size="8.5" fill="#333">• Log actions taken and current status</text>
+  <text x="422" y="196" font-size="8.5" fill="#333">• Monitor open and resolved incidents</text>
+  <text x="422" y="210" font-size="8.5" fill="#555" font-style="italic">Scope: School premises incidents only</text>
+  <rect x="422" y="220" width="120" height="16" rx="8" fill="#5c0000"/>
+  <text x="482" y="231" font-size="8" fill="white" text-anchor="middle">Report Incident</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="786" y1="175" x2="802" y2="175" stroke="#800000" stroke-width="2"/>
+  <polygon points="802,171 810,175 802,179" fill="#800000"/>
+
+  <!-- CF 3: Incident Action and Resolution Tracking -->
+  <rect x="810" y="106" width="380" height="138" rx="8" fill="white" stroke="#a30000" stroke-width="1.5"/>
+  <rect x="810" y="106" width="380" height="30" rx="8" fill="#a30000"/>
+  <rect x="810" y="122" width="380" height="14" fill="#a30000"/>
+  <text x="842" y="126" font-size="10" font-weight="700" fill="white">③ INCIDENT ACTION &amp; RESOLUTION TRACKING</text>
+  <circle cx="826" cy="121" r="9" fill="rgba(255,255,255,0.2)"/>
+  <text x="826" y="125" font-size="11" fill="white" text-anchor="middle">✅</text>
+  <text x="822" y="154" font-size="8.5" fill="#333">• Track progress of actions per incident</text>
+  <text x="822" y="168" font-size="8.5" fill="#333">• Identify incidents needing follow-up</text>
+  <text x="822" y="182" font-size="8.5" fill="#333">• Update resolution status</text>
+  <text x="822" y="196" font-size="8.5" fill="#333">• Mark incidents as completed or escalated</text>
+  <text x="822" y="210" font-size="8.5" fill="#555" font-style="italic">Scope: No police/medical ops included</text>
+  <rect x="822" y="220" width="120" height="16" rx="8" fill="#a30000"/>
+  <text x="882" y="231" font-size="8" fill="white" text-anchor="middle">Track Resolution</text>
+
+  <!-- Down arrow + U-turn connector -->
+  <line x1="1000" y1="244" x2="1000" y2="262" stroke="#800000" stroke-width="2"/>
+  <line x1="200" y1="262" x2="1000" y2="262" stroke="#800000" stroke-width="2"/>
+  <polygon points="196,258 188,262 196,266" fill="#800000"/>
+  <line x1="188" y1="262" x2="188" y2="280" stroke="#800000" stroke-width="2"/>
+
+  <!-- ── ROW 2: CF 4–6 ── -->
+
+  <!-- CF 4: Semester Attendance Monitoring -->
+  <rect x="10" y="280" width="376" height="138" rx="8" fill="white" stroke="#800000" stroke-width="1.5"/>
+  <rect x="10" y="280" width="376" height="30" rx="8" fill="#800000"/>
+  <rect x="10" y="296" width="376" height="14" fill="#800000"/>
+  <text x="42" y="300" font-size="10" font-weight="700" fill="white">④ SEMESTER ATTENDANCE MONITORING</text>
+  <circle cx="26" cy="295" r="9" fill="rgba(255,255,255,0.2)"/>
+  <text x="26" y="299" font-size="11" fill="white" text-anchor="middle">📅</text>
+  <text x="22" y="328" font-size="8.5" fill="#333">• Record present, absent &amp; tardy statuses</text>
+  <text x="22" y="342" font-size="8.5" fill="#333">• Monitor attendance throughout the semester</text>
+  <text x="22" y="356" font-size="8.5" fill="#333">• Generate attendance summary reports</text>
+  <text x="22" y="370" font-size="8.5" fill="#333">• Flag students with irregular attendance</text>
+  <text x="22" y="384" font-size="8.5" fill="#555" font-style="italic">Scope: Semester-based, school records only</text>
+  <rect x="22" y="394" width="120" height="16" rx="8" fill="#800000"/>
+  <text x="82" y="405" font-size="8" fill="white" text-anchor="middle">View Attendance</text>
+
+  <!-- Arrow 4→5 -->
+  <line x1="386" y1="349" x2="402" y2="349" stroke="#800000" stroke-width="2"/>
+  <polygon points="402,345 410,349 402,353" fill="#800000"/>
+
+  <!-- CF 5: Student Support Services Management -->
+  <rect x="410" y="280" width="376" height="138" rx="8" fill="white" stroke="#5c0000" stroke-width="1.5"/>
+  <rect x="410" y="280" width="376" height="30" rx="8" fill="#5c0000"/>
+  <rect x="410" y="296" width="376" height="14" fill="#5c0000"/>
+  <text x="442" y="300" font-size="10" font-weight="700" fill="white">⑤ STUDENT SUPPORT SERVICES MANAGEMENT</text>
+  <circle cx="426" cy="295" r="9" fill="rgba(255,255,255,0.2)"/>
+  <text x="426" y="299" font-size="11" fill="white" text-anchor="middle">🤝</text>
+  <text x="422" y="328" font-size="8.5" fill="#333">• Record academic assistance activities</text>
+  <text x="422" y="342" font-size="8.5" fill="#333">• Log guidance referrals &amp; counseling</text>
+  <text x="422" y="356" font-size="8.5" fill="#333">• Document other school-based support</text>
+  <text x="422" y="370" font-size="8.5" fill="#333">• Assign counselors to student concerns</text>
+  <text x="422" y="384" font-size="8.5" fill="#555" font-style="italic">Scope: No psych/medical consults included</text>
+  <rect x="422" y="394" width="120" height="16" rx="8" fill="#5c0000"/>
+  <text x="482" y="405" font-size="8" fill="white" text-anchor="middle">Manage Support</text>
+
+  <!-- Arrow 5→6 -->
+  <line x1="786" y1="349" x2="802" y2="349" stroke="#800000" stroke-width="2"/>
+  <polygon points="802,345 810,349 802,353" fill="#800000"/>
+
+  <!-- CF 6: Support Activity Progress Tracking -->
+  <rect x="810" y="280" width="380" height="138" rx="8" fill="white" stroke="#800000" stroke-width="1.5"/>
+  <rect x="810" y="280" width="380" height="30" rx="8" fill="#800000"/>
+  <rect x="810" y="296" width="380" height="14" fill="#800000"/>
+  <text x="842" y="300" font-size="10" font-weight="700" fill="white">⑥ SUPPORT ACTIVITY PROGRESS TRACKING</text>
+  <circle cx="826" cy="295" r="9" fill="rgba(255,255,255,0.2)"/>
+  <text x="826" y="299" font-size="11" fill="white" text-anchor="middle">📊</text>
+  <text x="822" y="328" font-size="8.5" fill="#333">• Monitor pending, ongoing &amp; completed services</text>
+  <text x="822" y="342" font-size="8.5" fill="#333">• Ensure appropriate follow-up for students</text>
+  <text x="822" y="356" font-size="8.5" fill="#333">• Update activity status in real time</text>
+  <text x="822" y="370" font-size="8.5" fill="#333">• Generate support activity completion reports</text>
+  <text x="822" y="384" font-size="8.5" fill="#555" font-style="italic">Scope: School personnel participation only</text>
+  <rect x="822" y="394" width="120" height="16" rx="8" fill="#800000"/>
+  <text x="882" y="405" font-size="8" fill="white" text-anchor="middle">Track Progress</text>
+
+  <!-- User Role Legend -->
+  <rect x="10" y="426" width="1180" height="28" rx="4" fill="#fff0f0" stroke="#e8c0c0" stroke-width="1"/>
+  <text x="22" y="444" font-size="8.5" fill="#800000" font-weight="700">👤 Students / Teachers</text>
+  <text x="148" y="444" font-size="8.5" fill="#555">→  Submit incident reports, attendance data, and request support services</text>
+  <text x="560" y="444" font-size="8.5" fill="#800000" font-weight="700">🏫 Counselors / Staff</text>
+  <text x="672" y="444" font-size="8.5" fill="#555">→  Manage support activities and update progress</text>
+  <text x="960" y="444" font-size="8.5" fill="#800000" font-weight="700">⚙ Admins</text>
+  <text x="1010" y="444" font-size="8.5" fill="#555">→  Oversee all modules</text>
+
+  <!-- SECTION 2: UI PROTOTYPE -->
+  <rect x="10" y="462" width="1180" height="28" rx="4" fill="#1a1a1a"/>
+  <text x="22" y="481" font-size="12" font-weight="700" fill="white">🖥  S⁴MS — UI PROTOTYPE SCREENS  |  Aligned with Core Functionalities</text>
+  <text x="730" y="481" font-size="8.5" fill="#aaa">Key screens mapped to each core functionality</text>
+
+  <!-- ── UI ROW 1 (3 screens) ── -->
+
+  <!-- UI 1: Student Info -->
+  <rect x="10" y="498" width="384" height="188" rx="6" fill="white" stroke="#ccc" stroke-width="1"/>
+  <rect x="10" y="498" width="384" height="22" rx="6" fill="#1a1a1a"/>
+  <rect x="10" y="508" width="384" height="12" fill="#1a1a1a"/>
+  <text x="24" y="514" font-size="9" font-weight="700" fill="white">CF①  Student Information Management</text>
+  <rect x="18" y="528" width="368" height="144" rx="4" fill="#f9f5f5" stroke="#e8d5d5" stroke-width="1"/>
+  <rect x="18" y="528" width="368" height="18" rx="4" fill="#800000"/>
+  <rect x="18" y="538" width="368" height="8" fill="#800000"/>
+  <text x="202" y="540" font-size="8.5" font-weight="700" fill="white" text-anchor="middle">Student Profile — Juan dela Cruz</text>
+  <text x="30" y="562" font-size="8" fill="#555" font-weight="700">Student ID:</text><text x="110" y="562" font-size="8" fill="#333">2024-00142</text>
+  <text x="230" y="562" font-size="8" fill="#555" font-weight="700">Year Level:</text><text x="300" y="562" font-size="8" fill="#333">Grade 10</text>
+  <text x="30" y="576" font-size="8" fill="#555" font-weight="700">Full Name:</text><text x="110" y="576" font-size="8" fill="#333">Juan dela Cruz</text>
+  <text x="230" y="576" font-size="8" fill="#555" font-weight="700">Section:</text><text x="300" y="576" font-size="8" fill="#333">10 — Mabini</text>
+  <text x="30" y="590" font-size="8" fill="#555" font-weight="700">Email:</text><text x="110" y="590" font-size="8" fill="#333">juan@school.edu.ph</text>
+  <text x="230" y="590" font-size="8" fill="#555" font-weight="700">Guardian:</text><text x="300" y="590" font-size="8" fill="#333">Maria dela Cruz</text>
+  <line x1="22" y1="598" x2="382" y2="598" stroke="#e8d5d5" stroke-width="0.8"/>
+  <text x="30" y="612" font-size="8" fill="#800000" font-weight="700">Linked Records:</text>
+  <rect x="30" y="618" width="80" height="16" rx="8" fill="#fff0f0" stroke="#d9a0a0" stroke-width="1"/>
+  <text x="70" y="629" font-size="7.5" fill="#800000" text-anchor="middle">📋 3 Incidents</text>
+  <rect x="118" y="618" width="80" height="16" rx="8" fill="#fff0f0" stroke="#d9a0a0" stroke-width="1"/>
+  <text x="158" y="629" font-size="7.5" fill="#800000" text-anchor="middle">📅 Attendance</text>
+  <rect x="206" y="618" width="80" height="16" rx="8" fill="#fff0f0" stroke="#d9a0a0" stroke-width="1"/>
+  <text x="246" y="629" font-size="7.5" fill="#800000" text-anchor="middle">🤝 2 Services</text>
+  <rect x="294" y="618" width="80" height="16" rx="8" fill="#800000"/>
+  <text x="334" y="629" font-size="7.5" fill="white" text-anchor="middle">Edit Profile</text>
+  <text x="202" y="660" font-size="8" fill="#800000" font-weight="700" text-anchor="middle">Student Information Management</text>
+  <text x="202" y="672" font-size="7.5" fill="#666" text-anchor="middle">Records linked to safety, attendance &amp; support</text>
+
+  <!-- UI 2: Safety Incident Reporting -->
+  <rect x="404" y="498" width="392" height="188" rx="6" fill="white" stroke="#ccc" stroke-width="1"/>
+  <rect x="404" y="498" width="392" height="22" rx="6" fill="#1a1a1a"/>
+  <rect x="404" y="508" width="392" height="12" fill="#1a1a1a"/>
+  <text x="418" y="514" font-size="9" font-weight="700" fill="white">CF②  Safety Incident Reporting &amp; Monitoring</text>
+  <rect x="412" y="528" width="376" height="144" rx="4" fill="#f9f5f5" stroke="#e8d5d5" stroke-width="1"/>
+  <rect x="412" y="528" width="376" height="18" rx="4" fill="#5c0000"/>
+  <rect x="412" y="538" width="376" height="8" fill="#5c0000"/>
+  <text x="600" y="540" font-size="8.5" font-weight="700" fill="white" text-anchor="middle">Report Safety Incident</text>
+  <text x="424" y="558" font-size="8" fill="#555">Incident Type:</text>
+  <rect x="424" y="562" width="175" height="12" rx="3" fill="white" stroke="#ddd" stroke-width="0.8"/>
+  <text x="511" y="571" font-size="7.5" fill="#999" text-anchor="middle">Safety / Welfare / Behavioral</text>
+  <text x="607" y="558" font-size="8" fill="#555">Date &amp; Time:</text>
+  <rect x="607" y="562" width="175" height="12" rx="3" fill="white" stroke="#ddd" stroke-width="0.8"/>
+  <text x="694" y="571" font-size="7.5" fill="#999" text-anchor="middle">MM/DD/YYYY  HH:MM</text>
+  <text x="424" y="584" font-size="8" fill="#555">Student(s) Involved:</text>
+  <rect x="424" y="588" width="358" height="12" rx="3" fill="white" stroke="#ddd" stroke-width="0.8"/>
+  <text x="603" y="597" font-size="7.5" fill="#999" text-anchor="middle">Search student name or ID</text>
+  <text x="424" y="610" font-size="8" fill="#555">Incident Details:</text>
+  <rect x="424" y="614" width="358" height="24" rx="3" fill="white" stroke="#ddd" stroke-width="0.8"/>
+  <text x="424" y="648" font-size="8" fill="#555">Actions Taken:</text>
+  <rect x="424" y="652" width="358" height="12" rx="3" fill="white" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="522" y="646" width="100" height="14" rx="7" fill="#5c0000"/>
+  <text x="572" y="656" font-size="8" fill="white" text-anchor="middle">Submit Report</text>
+  <text x="600" y="672" font-size="8" fill="#800000" font-weight="700" text-anchor="middle">Safety Incident Reporting</text>
+
+  <!-- UI 3: Incident Tracking -->
+  <rect x="806" y="498" width="384" height="188" rx="6" fill="white" stroke="#ccc" stroke-width="1"/>
+  <rect x="806" y="498" width="384" height="22" rx="6" fill="#1a1a1a"/>
+  <rect x="806" y="508" width="384" height="12" fill="#1a1a1a"/>
+  <text x="820" y="514" font-size="9" font-weight="700" fill="white">CF③  Incident Action &amp; Resolution Tracking</text>
+  <rect x="814" y="528" width="368" height="144" rx="4" fill="#f9f5f5" stroke="#e8d5d5" stroke-width="1"/>
+  <rect x="814" y="528" width="368" height="18" rx="4" fill="#a30000"/>
+  <rect x="814" y="538" width="368" height="8" fill="#a30000"/>
+  <text x="998" y="540" font-size="8.5" font-weight="700" fill="white" text-anchor="middle">Incident Resolution Tracker</text>
+  <!-- Table header -->
+  <rect x="818" y="550" width="360" height="14" rx="2" fill="#800000" opacity="0.85"/>
+  <text x="848" y="560" font-size="7.5" fill="white">Incident</text>
+  <text x="950" y="560" font-size="7.5" fill="white">Action Taken</text>
+  <text x="1076" y="560" font-size="7.5" fill="white">Status</text>
+  <!-- Row 1 -->
+  <rect x="818" y="564" width="360" height="14" fill="#fff0f0"/>
+  <text x="848" y="574" font-size="7.5" fill="#333">Slip/Fall — Corridor B</text>
+  <text x="950" y="574" font-size="7.5" fill="#333">First aid given</text>
+  <rect x="1066" y="566" width="54" height="10" rx="5" fill="#d4edda"/>
+  <text x="1093" y="574" font-size="7" fill="#155724" text-anchor="middle">Resolved</text>
+  <!-- Row 2 -->
+  <rect x="818" y="578" width="360" height="14" fill="white"/>
+  <text x="848" y="588" font-size="7.5" fill="#333">Fight — Gymnasium</text>
+  <text x="950" y="588" font-size="7.5" fill="#333">Mediation scheduled</text>
+  <rect x="1066" y="580" width="54" height="10" rx="5" fill="#fff3cd"/>
+  <text x="1093" y="588" font-size="7" fill="#856404" text-anchor="middle">Ongoing</text>
+  <!-- Row 3 -->
+  <rect x="818" y="592" width="360" height="14" fill="#fff0f0"/>
+  <text x="848" y="602" font-size="7.5" fill="#333">Threat — Library</text>
+  <text x="950" y="602" font-size="7.5" fill="#333">Referred to admin</text>
+  <rect x="1066" y="594" width="54" height="10" rx="5" fill="#f8d7da"/>
+  <text x="1093" y="602" font-size="7" fill="#721c24" text-anchor="middle">Pending</text>
+  <!-- Row 4 -->
+  <rect x="818" y="606" width="360" height="14" fill="white"/>
+  <text x="848" y="616" font-size="7.5" fill="#333">Bullying — Canteen</text>
+  <text x="950" y="616" font-size="7.5" fill="#333">Counselor assigned</text>
+  <rect x="1066" y="608" width="54" height="10" rx="5" fill="#fff3cd"/>
+  <text x="1093" y="616" font-size="7" fill="#856404" text-anchor="middle">Ongoing</text>
+  <!-- Row 5 -->
+  <rect x="818" y="620" width="360" height="14" fill="#fff0f0"/>
+  <text x="848" y="630" font-size="7.5" fill="#333">Property Damage</text>
+  <text x="950" y="630" font-size="7.5" fill="#333">Documented &amp; filed</text>
+  <rect x="1066" y="622" width="54" height="10" rx="5" fill="#d4edda"/>
+  <text x="1093" y="630" font-size="7" fill="#155724" text-anchor="middle">Resolved</text>
+  <text x="818" y="648" font-size="7.5" fill="#800000">⚠ 2 incidents require follow-up action</text>
+  <text x="998" y="672" font-size="8" fill="#800000" font-weight="700" text-anchor="middle">Incident Action &amp; Resolution Tracking</text>
+
+  <!-- ── UI ROW 2 (3 screens) ── -->
+
+  <!-- UI 4: Attendance -->
+  <rect x="10" y="696" width="384" height="190" rx="6" fill="white" stroke="#ccc" stroke-width="1"/>
+  <rect x="10" y="696" width="384" height="22" rx="6" fill="#1a1a1a"/>
+  <rect x="10" y="706" width="384" height="12" fill="#1a1a1a"/>
+  <text x="24" y="712" font-size="9" font-weight="700" fill="white">CF④  Semester Attendance Monitoring</text>
+  <rect x="18" y="726" width="368" height="146" rx="4" fill="#f9f5f5" stroke="#e8d5d5" stroke-width="1"/>
+  <rect x="18" y="726" width="368" height="18" rx="4" fill="#800000"/>
+  <rect x="18" y="736" width="368" height="8" fill="#800000"/>
+  <text x="202" y="738" font-size="8.5" font-weight="700" fill="white" text-anchor="middle">Semester Attendance Record — Grade 10 Mabini</text>
+  <!-- Table header -->
+  <rect x="22" y="748" width="360" height="13" rx="2" fill="#800000" opacity="0.8"/>
+  <text x="60" y="758" font-size="7.5" fill="white">Student Name</text>
+  <text x="180" y="758" font-size="7.5" fill="white">Present</text>
+  <text x="228" y="758" font-size="7.5" fill="white">Absent</text>
+  <text x="274" y="758" font-size="7.5" fill="white">Tardy</text>
+  <text x="318" y="758" font-size="7.5" fill="white">Status</text>
+  <!-- Rows -->
+  <rect x="22" y="761" width="360" height="13" fill="#fff0f0"/>
+  <text x="60" y="771" font-size="7.5" fill="#333">Juan dela Cruz</text>
+  <text x="188" y="771" font-size="7.5" fill="#333">42</text>
+  <text x="236" y="771" font-size="7.5" fill="#333">3</text>
+  <text x="282" y="771" font-size="7.5" fill="#333">5</text>
+  <rect x="310" y="763" width="64" height="9" rx="4.5" fill="#d4edda"/>
+  <text x="342" y="770" font-size="7" fill="#155724" text-anchor="middle">Good</text>
+  <rect x="22" y="774" width="360" height="13" fill="white"/>
+  <text x="60" y="784" font-size="7.5" fill="#333">Maria Santos</text>
+  <text x="188" y="784" font-size="7.5" fill="#333">28</text>
+  <text x="236" y="784" font-size="7.5" fill="#333">15</text>
+  <text x="282" y="784" font-size="7.5" fill="#333">7</text>
+  <rect x="310" y="776" width="64" height="9" rx="4.5" fill="#f8d7da"/>
+  <text x="342" y="783" font-size="7" fill="#721c24" text-anchor="middle">At Risk</text>
+  <rect x="22" y="787" width="360" height="13" fill="#fff0f0"/>
+  <text x="60" y="797" font-size="7.5" fill="#333">Carlo Reyes</text>
+  <text x="188" y="797" font-size="7.5" fill="#333">38</text>
+  <text x="236" y="797" font-size="7.5" fill="#333">8</text>
+  <text x="282" y="797" font-size="7.5" fill="#333">4</text>
+  <rect x="310" y="789" width="64" height="9" rx="4.5" fill="#fff3cd"/>
+  <text x="342" y="796" font-size="7" fill="#856404" text-anchor="middle">Warning</text>
+  <rect x="22" y="800" width="360" height="13" fill="white"/>
+  <text x="60" y="810" font-size="7.5" fill="#333">Ana Flores</text>
+  <text x="188" y="810" font-size="7.5" fill="#333">49</text>
+  <text x="236" y="810" font-size="7.5" fill="#333">1</text>
+  <text x="282" y="810" font-size="7.5" fill="#333">0</text>
+  <rect x="310" y="802" width="64" height="9" rx="4.5" fill="#d4edda"/>
+  <text x="342" y="809" font-size="7" fill="#155724" text-anchor="middle">Good</text>
+  <text x="22" y="826" font-size="7.5" fill="#800000">📊 Summary: 4 students · 1 At Risk · 1 Warning</text>
+  <rect x="258" y="820" width="120" height="14" rx="7" fill="#800000"/>
+  <text x="318" y="830" font-size="7.5" fill="white" text-anchor="middle">Generate Report</text>
+  <text x="202" y="870" font-size="8" fill="#800000" font-weight="700" text-anchor="middle">Semester Attendance Monitoring</text>
+  <text x="202" y="882" font-size="7.5" fill="#666" text-anchor="middle">Present · Absent · Tardy · Status flags</text>
+
+  <!-- UI 5: Support Services -->
+  <rect x="404" y="696" width="392" height="190" rx="6" fill="white" stroke="#ccc" stroke-width="1"/>
+  <rect x="404" y="696" width="392" height="22" rx="6" fill="#1a1a1a"/>
+  <rect x="404" y="706" width="392" height="12" fill="#1a1a1a"/>
+  <text x="418" y="712" font-size="9" font-weight="700" fill="white">CF⑤  Student Support Services Management</text>
+  <rect x="412" y="726" width="376" height="146" rx="4" fill="#f9f5f5" stroke="#e8d5d5" stroke-width="1"/>
+  <rect x="412" y="726" width="376" height="18" rx="4" fill="#5c0000"/>
+  <rect x="412" y="736" width="376" height="8" fill="#5c0000"/>
+  <text x="600" y="738" font-size="8.5" font-weight="700" fill="white" text-anchor="middle">Log Student Support Activity</text>
+  <text x="424" y="758" font-size="8" fill="#555">Student:</text>
+  <rect x="424" y="762" width="175" height="12" rx="3" fill="white" stroke="#ddd" stroke-width="0.8"/>
+  <text x="511" y="771" font-size="7.5" fill="#999" text-anchor="middle">Search student name or ID</text>
+  <text x="607" y="758" font-size="8" fill="#555">Service Type:</text>
+  <rect x="607" y="762" width="175" height="12" rx="3" fill="white" stroke="#ddd" stroke-width="0.8"/>
+  <text x="694" y="771" font-size="7.5" fill="#999" text-anchor="middle">Academic / Guidance / Referral</text>
+  <text x="424" y="784" font-size="8" fill="#555">Assigned Counselor / Staff:</text>
+  <rect x="424" y="788" width="358" height="12" rx="3" fill="white" stroke="#ddd" stroke-width="0.8"/>
+  <text x="603" y="797" font-size="7.5" fill="#999" text-anchor="middle">Select counselor or staff member</text>
+  <text x="424" y="810" font-size="8" fill="#555">Service Notes:</text>
+  <rect x="424" y="814" width="358" height="24" rx="3" fill="white" stroke="#ddd" stroke-width="0.8"/>
+  <text x="424" y="848" font-size="8" fill="#555">Initial Status:</text>
+  <rect x="500" y="843" width="80" height="14" rx="3" fill="white" stroke="#ddd" stroke-width="0.8"/>
+  <text x="540" y="853" font-size="7.5" fill="#999" text-anchor="middle">Pending</text>
+  <rect x="490" y="844" width="0" height="0"/>
+  <rect x="700" y="843" width="78" height="14" rx="7" fill="#5c0000"/>
+  <text x="739" y="853" font-size="8" fill="white" text-anchor="middle">Save Activity</text>
+  <text x="600" y="870" font-size="8" fill="#800000" font-weight="700" text-anchor="middle">Student Support Services Management</text>
+  <text x="600" y="882" font-size="7.5" fill="#666" text-anchor="middle">Academic · Guidance · School-based support</text>
+
+  <!-- UI 6: Support Progress Tracking -->
+  <rect x="806" y="696" width="384" height="190" rx="6" fill="white" stroke="#ccc" stroke-width="1"/>
+  <rect x="806" y="696" width="384" height="22" rx="6" fill="#1a1a1a"/>
+  <rect x="806" y="706" width="384" height="12" fill="#1a1a1a"/>
+  <text x="820" y="712" font-size="9" font-weight="700" fill="white">CF⑥  Support Activity Progress Tracking</text>
+  <rect x="814" y="726" width="368" height="146" rx="4" fill="#f9f5f5" stroke="#e8d5d5" stroke-width="1"/>
+  <rect x="814" y="726" width="368" height="18" rx="4" fill="#800000"/>
+  <rect x="814" y="736" width="368" height="8" fill="#800000"/>
+  <text x="998" y="738" font-size="8.5" font-weight="700" fill="white" text-anchor="middle">Support Activity Progress</text>
+  <!-- Table header -->
+  <rect x="818" y="748" width="360" height="13" rx="2" fill="#800000" opacity="0.8"/>
+  <text x="848" y="758" font-size="7.5" fill="white">Student</text>
+  <text x="918" y="758" font-size="7.5" fill="white">Service</text>
+  <text x="1018" y="758" font-size="7.5" fill="white">Counselor</text>
+  <text x="1120" y="758" font-size="7.5" fill="white">Status</text>
+  <!-- Rows -->
+  <rect x="818" y="761" width="360" height="13" fill="#fff0f0"/>
+  <text x="848" y="771" font-size="7.5" fill="#333">M. Santos</text>
+  <text x="918" y="771" font-size="7.5" fill="#333">Counseling</text>
+  <text x="1018" y="771" font-size="7.5" fill="#333">Ms. Reyes</text>
+  <rect x="1110" y="763" width="60" height="9" rx="4.5" fill="#fff3cd"/>
+  <text x="1140" y="770" font-size="7" fill="#856404" text-anchor="middle">Ongoing</text>
+  <rect x="818" y="774" width="360" height="13" fill="white"/>
+  <text x="848" y="784" font-size="7.5" fill="#333">C. Reyes</text>
+  <text x="918" y="784" font-size="7.5" fill="#333">Mediation</text>
+  <text x="1018" y="784" font-size="7.5" fill="#333">Mr. Santos</text>
+  <rect x="1110" y="776" width="60" height="9" rx="4.5" fill="#d4edda"/>
+  <text x="1140" y="783" font-size="7" fill="#155724" text-anchor="middle">Completed</text>
+  <rect x="818" y="787" width="360" height="13" fill="#fff0f0"/>
+  <text x="848" y="797" font-size="7.5" fill="#333">J. dela Cruz</text>
+  <text x="918" y="797" font-size="7.5" fill="#333">Referral</text>
+  <text x="1018" y="797" font-size="7.5" fill="#333">Dr. Cruz</text>
+  <rect x="1110" y="789" width="60" height="9" rx="4.5" fill="#f8d7da"/>
+  <text x="1140" y="796" font-size="7" fill="#721c24" text-anchor="middle">Pending</text>
+  <rect x="818" y="800" width="360" height="13" fill="white"/>
+  <text x="848" y="810" font-size="7.5" fill="#333">A. Flores</text>
+  <text x="918" y="810" font-size="7.5" fill="#333">Academic Aid</text>
+  <text x="1018" y="810" font-size="7.5" fill="#333">Ms. Lim</text>
+  <rect x="1110" y="802" width="60" height="9" rx="4.5" fill="#d4edda"/>
+  <text x="1140" y="809" font-size="7" fill="#155724" text-anchor="middle">Completed</text>
+  <!-- Summary bar -->
+  <rect x="818" y="818" width="360" height="14" rx="3" fill="#fff0f0" stroke="#e8c0c0" stroke-width="0.8"/>
+  <text x="828" y="828" font-size="7.5" fill="#800000">Pending: 1  |  Ongoing: 1  |  Completed: 2  |  Follow-up needed: 1</text>
+  <rect x="818" y="836" width="114" height="14" rx="7" fill="#800000"/>
+  <text x="875" y="846" font-size="7.5" fill="white" text-anchor="middle">Generate Report</text>
+  <text x="998" y="870" font-size="8" fill="#800000" font-weight="700" text-anchor="middle">Support Activity Progress Tracking</text>
+  <text x="998" y="882" font-size="7.5" fill="#666" text-anchor="middle">Pending · Ongoing · Completed · Follow-up</text>
+
+  <!-- BOTTOM FOOTER -->
+  <rect x="0" y="892" width="1200" height="28" fill="#1a1a1a"/>
+  <text x="600" y="910" font-size="8.5" fill="#888" text-anchor="middle">© 2026 Global Solutions INC. — Smart School Safety and Student Support Management System (S⁴MS) — System Blueprint &amp; UI Prototype</text>
+
+</svg>

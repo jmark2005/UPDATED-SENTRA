@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login — SENTRA</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="auth-page login-page">
+
+  <div class="bg-layer">
+    <div class="particle p1"></div>
+    <div class="particle p2"></div>
+    <div class="particle p3"></div>
+    <div class="particle p4"></div>
+    <div class="particle p5"></div>
+    <div class="particle p6"></div>
+  </div>
+
+  <div class="login-wrapper">
+
+    <div class="left-panel">
+      <a href="index.html" class="back-link">
+        <i class="fas fa-arrow-left"></i> Back to Home
+      </a>
+
+      <div class="brand">
+        <img src="Global Solutions INC..jpg" alt="Global Solutions INC." class="brand-logo" />
+        <div class="brand-text">
+          <span class="brand-name">Global Solutions INC.</span>
+          <span class="brand-tagline">SENTRA</span>
+        </div>
+      </div>
+
+      <div class="left-body">
+        <h1>Welcome<br /><span>Back.</span></h1>
+        <p>Sign in to access your dashboard and manage safety incidents, student support activities, and more.</p>
+
+        <div class="feature-pills">
+          <div class="pill"><i class="fas fa-gauge-high"></i> Dashboard</div>
+          <div class="pill"><i class="fas fa-bell"></i> Emergency Alerts</div>
+          <div class="pill"><i class="fas fa-map-location-dot"></i> Facility Map</div>
+          <div class="pill"><i class="fas fa-file-circle-exclamation"></i> Incident Reports</div>
+          <div class="pill"><i class="fas fa-calendar-check"></i> Attendance</div>
+        </div>
+      </div>
+
+      <div class="left-footer">
+        &copy; 2026 Global Solutions INC. All rights reserved.
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <div class="login-card">
+
+        <div class="card-header">
+          <div class="lock-icon">
+            <i class="fas fa-shield-halved"></i>
+          </div>
+          <h2>Sign In</h2>
+          <p>Select your role and enter your credentials</p>
+        </div>
+
+        <div class="role-tabs">
+          <input type="radio" name="role_tab" id="tab_admin"     class="tab-radio" />
+          <input type="radio" name="role_tab" id="tab_teacher"   class="tab-radio" />
+          <input type="radio" name="role_tab" id="tab_counselor" class="tab-radio" />
+          <input type="radio" name="role_tab" id="tab_staff"     class="tab-radio" />
+          <input type="radio" name="role_tab" id="tab_student"   class="tab-radio" checked />
+
+          <label for="tab_admin"     class="role-tab"><i class="fas fa-user-shield"></i> Admin</label>
+          <label for="tab_teacher"   class="role-tab"><i class="fas fa-chalkboard-teacher"></i> Teacher</label>
+          <label for="tab_counselor" class="role-tab"><i class="fas fa-heart-pulse"></i> Counselor</label>
+          <label for="tab_staff"     class="role-tab"><i class="fas fa-id-badge"></i> Staff</label>
+          <label for="tab_student"   class="role-tab"><i class="fas fa-user-graduate"></i> Student</label>
+        </div>
+
+        <div class="demo-hint" id="demoHint"></div>
+
+        <form class="login-form" id="loginForm" action="#" method="post">
+
+          <div class="input-group">
+            <label for="username">
+              <i class="fas fa-user"></i> Username
+            </label>
+            <div class="input-wrap">
+              <input type="text" id="username" name="username" placeholder="Enter your username" autocomplete="username" />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="password">
+              <i class="fas fa-lock"></i> Password
+            </label>
+            <div class="input-wrap">
+              <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password" />
+            </div>
+          </div>
+
+          <div class="form-options">
+            <label class="remember-label">
+              <input type="checkbox" name="remember" />
+              <span class="custom-checkbox"></span>
+              Remember me
+            </label>
+            <a href="#" class="forgot-link">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn-login">
+            <i class="fas fa-right-to-bracket"></i> Sign In
+          </button>
+
+          <div class="login-error" id="loginError"></div>
+
+        </form>
+
+        <div class="signup-prompt">
+          Don't have an account?
+          <a href="signup.html" class="signup-link">Sign Up</a>
+        </div>
+
+        <div class="card-footer-note">
+          <i class="fas fa-circle-info"></i>
+          Access is restricted to authorized school personnel only.
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Hard-coded demo accounts (front-end only)
+    const demoAccounts = {
+      admin:   { username: 'admin',   password: 'admin123',   name: 'School Administrator', dashboard: 'admin-dashboard.html' },
+      student: { username: 'student', password: 'student123', name: 'Juan dela Cruz',       dashboard: 'student-dashboard.html' }
+    };
+
+    const roleMap = {
+      tab_admin: 'admin',
+      tab_teacher: 'teacher',
+      tab_counselor: 'counselor',
+      tab_staff: 'staff',
+      tab_student: 'student'
+    };
+
+    function getSelectedRole() {
+      const checked = document.querySelector('input[name="role_tab"]:checked');
+      return roleMap[checked.id];
+    }
+
+    function updateDemoHint() {
+      const role = getSelectedRole();
+      const hint = document.getElementById('demoHint');
+      if (demoAccounts[role]) {
+        const a = demoAccounts[role];
+        hint.innerHTML = '<i class="fas fa-circle-info"></i> Demo credentials &mdash; <strong>u:</strong> ' + a.username + ' &nbsp; <strong>p:</strong> ' + a.password;
+      } else {
+        hint.innerHTML = '<i class="fas fa-circle-info"></i> Demo access is available for the <strong>Student</strong> role only.';
+      }
+    }
+
+    document.querySelectorAll('input[name="role_tab"]').forEach(function (r) {
+      r.addEventListener('change', updateDemoHint);
+    });
+    updateDemoHint();
+
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const role = getSelectedRole();
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value;
+      const errEl = document.getElementById('loginError');
+      errEl.textContent = '';
+
+      // Secret admin login — admin credentials work from any selected role tab
+      if (username === demoAccounts.admin.username && password === demoAccounts.admin.password) {
+        sessionStorage.setItem('sentra_user', JSON.stringify({ role: 'admin', name: demoAccounts.admin.name, username: demoAccounts.admin.username }));
+        window.location.href = demoAccounts.admin.dashboard;
+        return;
+      }
+
+      if (!demoAccounts[role]) {
+        errEl.textContent = 'Demo access is currently available for the Student role only.';
+        return;
+      }
+      const acct = demoAccounts[role];
+      if (username === acct.username && password === acct.password) {
+        sessionStorage.setItem('sentra_user', JSON.stringify({ role: role, name: acct.name, username: acct.username }));
+        window.location.href = acct.dashboard;
+      } else {
+        errEl.textContent = 'Invalid username or password. Please check the demo credentials.';
+      }
+    });
+  </script>
+
+</body>
+</html>

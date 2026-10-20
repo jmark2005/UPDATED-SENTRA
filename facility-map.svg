@@ -1,0 +1,208 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" width="1200" height="860" font-family="Segoe UI, Arial, sans-serif">
+
+  <!-- Page background -->
+  <rect width="1200" height="860" fill="#f4f6fa"/>
+
+  <!-- ===== HEADER ===== -->
+  <rect x="0" y="0" width="1200" height="56" fill="#800000"/>
+  <rect x="14" y="11" width="34" height="34" rx="7" fill="#5c0000"/>
+  <text x="31" y="34" font-size="17" fill="#fff" text-anchor="middle">🛡</text>
+  <text x="60" y="26" font-size="15" font-weight="700" fill="#fff">SENTRA — School Facility Map</text>
+  <text x="60" y="44" font-size="9.5" fill="#ffcccc">Pinpoints the exact location of reported incidents and ongoing emergencies</text>
+  <!-- LIVE pill -->
+  <circle cx="1098" cy="28" r="4.5" fill="#5ee25e">
+    <animate attributeName="opacity" values="1;0.25;1" dur="1.4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="1110" y="32" font-size="10" font-weight="700" fill="#fff">LIVE</text>
+  <rect x="1132" y="14" width="54" height="28" rx="14" fill="rgba(255,255,255,0.15)"/>
+  <text x="1159" y="32" font-size="9.5" fill="#fff" text-anchor="middle">Floor 1</text>
+
+  <!-- ===== MAP GROUND ===== -->
+  <rect x="30" y="70" width="1140" height="680" rx="10" fill="#eef1f6" stroke="#d8dee8" stroke-width="1"/>
+
+  <!-- Building floor -->
+  <rect x="60" y="90" width="1080" height="630" rx="6" fill="#ffffff"/>
+
+  <!-- Corridors (drawn under rooms) -->
+  <rect x="60" y="386" width="1080" height="48" fill="#e9ecef"/>
+  <rect x="708" y="90" width="32" height="630" fill="#e9ecef"/>
+  <!-- corridor grid lines -->
+  <line x1="60" y1="410" x2="1140" y2="410" stroke="#d4dae2" stroke-width="0.6" stroke-dasharray="4 4"/>
+  <line x1="724" y1="90" x2="724" y2="720" stroke="#d4dae2" stroke-width="0.6" stroke-dasharray="4 4"/>
+
+  <!-- ===== ROOMS (top row) ===== -->
+  <!-- Library -->
+  <rect x="72" y="94" width="236" height="286" rx="4" fill="#ffffff" stroke="#800000" stroke-width="1.6"/>
+  <rect x="72" y="94" width="236" height="22" rx="4" fill="#800000"/>
+  <rect x="72" y="110" width="236" height="6" fill="#800000"/>
+  <text x="190" y="109" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">LIBRARY</text>
+  <text x="190" y="150" font-size="24" text-anchor="middle">📚</text>
+  <text x="190" y="178" font-size="9" fill="#999" text-anchor="middle">Reading Hall</text>
+
+  <!-- Science Lab -->
+  <rect x="322" y="94" width="186" height="286" rx="4" fill="#ffffff" stroke="#800000" stroke-width="1.6"/>
+  <rect x="322" y="94" width="186" height="22" rx="4" fill="#800000"/>
+  <rect x="322" y="110" width="186" height="6" fill="#800000"/>
+  <text x="415" y="109" font-size="9.5" font-weight="700" fill="#fff" text-anchor="middle">SCIENCE LAB</text>
+  <text x="415" y="150" font-size="24" text-anchor="middle">🔬</text>
+  <text x="415" y="178" font-size="9" fill="#999" text-anchor="middle">Laboratory</text>
+
+  <!-- ICT Lab -->
+  <rect x="520" y="94" width="186" height="286" rx="4" fill="#ffffff" stroke="#800000" stroke-width="1.6"/>
+  <rect x="520" y="94" width="186" height="22" rx="4" fill="#800000"/>
+  <rect x="520" y="110" width="186" height="6" fill="#800000"/>
+  <text x="613" y="109" font-size="9.5" font-weight="700" fill="#fff" text-anchor="middle">ICT LABORATORY</text>
+  <text x="613" y="150" font-size="24" text-anchor="middle">💻</text>
+  <text x="613" y="178" font-size="9" fill="#999" text-anchor="middle">Computer Room</text>
+
+  <!-- Gymnasium -->
+  <rect x="746" y="94" width="388" height="286" rx="4" fill="#ffffff" stroke="#800000" stroke-width="1.6"/>
+  <rect x="746" y="94" width="388" height="22" rx="4" fill="#800000"/>
+  <rect x="746" y="110" width="388" height="6" fill="#800000"/>
+  <text x="940" y="109" font-size="11.5" font-weight="700" fill="#fff" text-anchor="middle">GYMNASIUM</text>
+  <text x="940" y="156" font-size="30" text-anchor="middle">🏀</text>
+  <text x="940" y="184" font-size="9.5" fill="#999" text-anchor="middle">Sports Hall</text>
+
+  <!-- ===== ROOMS (bottom row) ===== -->
+  <!-- Administration -->
+  <rect x="72" y="440" width="236" height="270" rx="4" fill="#ffffff" stroke="#800000" stroke-width="1.6"/>
+  <rect x="72" y="440" width="236" height="22" rx="4" fill="#5c0000"/>
+  <rect x="72" y="456" width="236" height="6" fill="#5c0000"/>
+  <text x="190" y="455" font-size="9.5" font-weight="700" fill="#fff" text-anchor="middle">ADMINISTRATION</text>
+  <text x="190" y="496" font-size="24" text-anchor="middle">🏛️</text>
+  <text x="190" y="524" font-size="9" fill="#999" text-anchor="middle">Main Office</text>
+
+  <!-- Clinic -->
+  <rect x="322" y="440" width="186" height="270" rx="4" fill="#ffffff" stroke="#800000" stroke-width="1.6"/>
+  <rect x="322" y="440" width="186" height="22" rx="4" fill="#5c0000"/>
+  <rect x="322" y="456" width="186" height="6" fill="#5c0000"/>
+  <text x="415" y="455" font-size="9.5" font-weight="700" fill="#fff" text-anchor="middle">CLINIC</text>
+  <text x="415" y="496" font-size="24" text-anchor="middle">⚕️</text>
+  <text x="415" y="524" font-size="9" fill="#999" text-anchor="middle">First Aid Station</text>
+
+  <!-- Guidance -->
+  <rect x="520" y="440" width="186" height="270" rx="4" fill="#ffffff" stroke="#800000" stroke-width="1.6"/>
+  <rect x="520" y="440" width="186" height="22" rx="4" fill="#5c0000"/>
+  <rect x="520" y="456" width="186" height="6" fill="#5c0000"/>
+  <text x="613" y="455" font-size="9" font-weight="700" fill="#fff" text-anchor="middle">GUIDANCE OFFICE</text>
+  <text x="613" y="496" font-size="24" text-anchor="middle">🤝</text>
+  <text x="613" y="524" font-size="9" fill="#999" text-anchor="middle">Counseling</text>
+
+  <!-- Canteen -->
+  <rect x="746" y="440" width="388" height="270" rx="4" fill="#ffffff" stroke="#800000" stroke-width="1.6"/>
+  <rect x="746" y="440" width="388" height="22" rx="4" fill="#5c0000"/>
+  <rect x="746" y="456" width="388" height="6" fill="#5c0000"/>
+  <text x="940" y="455" font-size="11.5" font-weight="700" fill="#fff" text-anchor="middle">CANTEEN / CANTEEN</text>
+  <text x="940" y="455" font-size="11.5" font-weight="700" fill="#fff" text-anchor="middle"></text>
+  <rect x="746" y="440" width="388" height="22" rx="4" fill="#5c0000"/>
+  <text x="940" y="455" font-size="11.5" font-weight="700" fill="#fff" text-anchor="middle">CANTEEN / CAFETERIA</text>
+  <text x="940" y="502" font-size="30" text-anchor="middle">🍽️</text>
+  <text x="940" y="530" font-size="9.5" fill="#999" text-anchor="middle">Dining Area</text>
+
+  <!-- ===== CORRIDOR LABELS ===== -->
+  <text x="392" y="416" font-size="9" font-weight="700" fill="#aab2bd" letter-spacing="2">CORRIDOR A</text>
+  <text x="724" y="560" font-size="9" font-weight="700" fill="#aab2bd" letter-spacing="2" text-anchor="middle" transform="rotate(-90 724 560)">CORRIDOR B</text>
+
+  <!-- ===== OUTER WALL (perimeter, drawn last) ===== -->
+  <rect x="60" y="90" width="1080" height="630" rx="6" fill="none" stroke="#800000" stroke-width="3"/>
+  <!-- Erase entrance gap on bottom wall (aligned with Corridor B) -->
+  <rect x="706" y="714" width="36" height="14" fill="#e9ecef"/>
+  <line x1="706" y1="720" x2="706" y2="730" stroke="#800000" stroke-width="2"/>
+  <line x1="742" y1="720" x2="742" y2="730" stroke="#800000" stroke-width="2"/>
+  <text x="724" y="744" font-size="9.5" font-weight="700" fill="#5c0000" text-anchor="middle">▲ MAIN ENTRANCE</text>
+
+  <!-- Emergency exits (side) -->
+  <rect x="64" y="401" width="26" height="18" rx="3" fill="#2e8b57"/>
+  <text x="77" y="414" font-size="7" font-weight="700" fill="#fff" text-anchor="middle">EXIT</text>
+  <rect x="1110" y="401" width="26" height="18" rx="3" fill="#2e8b57"/>
+  <text x="1123" y="414" font-size="7" font-weight="700" fill="#fff" text-anchor="middle">EXIT</text>
+
+  <!-- ===== INCIDENT MARKERS ===== -->
+  <!-- Library (Pending — amber) -->
+  <circle cx="190" cy="300" r="10" fill="#d97706" opacity="0.4">
+    <animate attributeName="r" values="9;16;9" dur="1.7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.08;0.5" dur="1.7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="190" cy="300" r="7" fill="#c2680a" stroke="#fff" stroke-width="1.5"/>
+  <text x="190" y="303" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">!</text>
+  <rect x="130" y="316" width="120" height="18" rx="9" fill="#c2680a"/>
+  <text x="190" y="329" font-size="8.5" font-weight="700" fill="#fff" text-anchor="middle">⚠ Library — Threat</text>
+
+  <!-- Science Lab (Resolved — green, static) -->
+  <circle cx="415" cy="300" r="7" fill="#2e8b57" stroke="#fff" stroke-width="1.5"/>
+  <text x="415" y="303" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">✓</text>
+  <rect x="345" y="316" width="140" height="18" rx="9" fill="#2e8b57"/>
+  <text x="415" y="329" font-size="8.5" font-weight="700" fill="#fff" text-anchor="middle">✓ Science Lab — Resolved</text>
+
+  <!-- Gymnasium (Ongoing — red) -->
+  <circle cx="940" cy="300" r="10" fill="#e62020" opacity="0.4">
+    <animate attributeName="r" values="9;16;9" dur="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.08;0.5" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="940" cy="300" r="7" fill="#b00000" stroke="#fff" stroke-width="1.5"/>
+  <text x="940" y="303" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">!</text>
+  <rect x="879" y="316" width="122" height="18" rx="9" fill="#b00000"/>
+  <text x="940" y="329" font-size="8.5" font-weight="700" fill="#fff" text-anchor="middle">⚠ Gymnasium — Fight</text>
+
+  <!-- Corridor B (Active — red) -->
+  <circle cx="724" cy="410" r="10" fill="#e62020" opacity="0.4">
+    <animate attributeName="r" values="9;16;9" dur="1.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.08;0.5" dur="1.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="724" cy="410" r="7" fill="#b00000" stroke="#fff" stroke-width="1.5"/>
+  <text x="724" y="413" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">!</text>
+  <rect x="754" y="401" width="138" height="18" rx="9" fill="#b00000"/>
+  <text x="823" y="414" font-size="8.5" font-weight="700" fill="#fff" text-anchor="middle">⚠ Corridor B — Slip/Fall</text>
+
+  <!-- Canteen (Ongoing — red) -->
+  <circle cx="940" cy="636" r="10" fill="#e62020" opacity="0.4">
+    <animate attributeName="r" values="9;16;9" dur="1.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.08;0.5" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="940" cy="636" r="7" fill="#b00000" stroke="#fff" stroke-width="1.5"/>
+  <text x="940" y="639" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">!</text>
+  <rect x="877" y="652" width="126" height="18" rx="9" fill="#b00000"/>
+  <text x="940" y="665" font-size="8.5" font-weight="700" fill="#fff" text-anchor="middle">⚠ Canteen — Bullying</text>
+
+  <!-- ===== LEGEND ===== -->
+  <rect x="30" y="758" width="1140" height="62" rx="8" fill="#ffffff" stroke="#e2e6ee" stroke-width="1"/>
+  <text x="48" y="778" font-size="9.5" font-weight="700" fill="#800000" letter-spacing="1">LEGEND</text>
+
+  <!-- Building -->
+  <rect x="118" y="772" width="20" height="15" rx="3" fill="#fff" stroke="#800000" stroke-width="1.4"/>
+  <text x="146" y="784" font-size="9" fill="#555">Building / Room</text>
+
+  <!-- Active / Ongoing -->
+  <circle cx="262" cy="779" r="6" fill="#e62020" stroke="#fff" stroke-width="1.2"/>
+  <text x="276" y="784" font-size="9" fill="#555">Active / Ongoing Incident</text>
+
+  <!-- Pending -->
+  <circle cx="442" cy="779" r="6" fill="#c2680a" stroke="#fff" stroke-width="1.2"/>
+  <text x="456" y="784" font-size="9" fill="#555">Pending</text>
+
+  <!-- Resolved -->
+  <circle cx="528" cy="779" r="6" fill="#2e8b57" stroke="#fff" stroke-width="1.2"/>
+  <text x="542" y="784" font-size="9" fill="#555">Resolved</text>
+
+  <!-- Emergency exit -->
+  <rect x="616" y="773" width="14" height="13" rx="2" fill="#2e8b57"/>
+  <text x="638" y="784" font-size="9" fill="#555">Emergency Exit</text>
+
+  <!-- First aid -->
+  <text x="746" y="785" font-size="13" fill="#800000">⚕️</text>
+  <text x="762" y="784" font-size="9" fill="#555">First Aid / Clinic</text>
+
+  <!-- Corridor -->
+  <rect x="868" y="775" width="22" height="9" fill="#e9ecef" stroke="#cdd3da" stroke-width="0.8"/>
+  <text x="898" y="784" font-size="9" fill="#555">Corridor / Walkway</text>
+
+  <!-- Compass -->
+  <circle cx="1126" cy="789" r="14" fill="#fff" stroke="#800000" stroke-width="1.4"/>
+  <polygon points="1126,778 1121,792 1131,792" fill="#800000"/>
+  <text x="1126" y="800" font-size="7.5" font-weight="700" fill="#5c0000" text-anchor="middle">N</text>
+
+  <!-- Footer note -->
+  <text x="48" y="808" font-size="8" fill="#999">SENTRA Facility Mapping — incident locations update in real time as reports are filed by school personnel.</text>
+  <text x="1152" y="808" font-size="8" fill="#bbb" text-anchor="end">© 2026 Global Solutions INC.</text>
+
+</svg>
